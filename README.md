@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyecto de Gestión de Artículos con Notificaciones en Tiempo Real
 
-## Getting Started
+Este proyecto es una aplicación desarrollada en **React/Next.js** que permite gestionar artículos. Incluye las siguientes funcionalidades:
 
-First, run the development server:
+- **Ver Artículos**: Visualiza la lista completa de artículos disponibles.
+- **Agregar Artículos**: Añade nuevos artículos a la lista.
+- **Editar Artículos**: Modifica la información de artículos existentes.
+- **Eliminar Artículos**: Elimina artículos de la lista.
+- **Notificaciones en Tiempo Real**: Recibe notificaciones en tiempo real mediante **sockets** cuando se agrega, edita o elimina un artículo.
+
+## Requisitos Previos
+
+Antes de ejecutar este proyecto, asegúrate de tener instalados los siguientes elementos:
+
+- **Node.js** (versión 14 o superior)
+- **npm** o **yarn** (para la gestión de paquetes)
+
+## Instalación
+
+Sigue estos pasos para configurar el proyecto en tu máquina local:
+
+1. **Clona el repositorio**
+
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   cd <NOMBRE_DEL_PROYECTO>
+   ```
+
+2. **Instala las dependencias**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Ejecución del Proyecto**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Modo Desarrollo**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+yarn dev
+```
 
-## Learn More
+**Modo Producción**
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

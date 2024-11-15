@@ -13,7 +13,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     const [socket, setSocket] = useState<Socket | null>(null);
 
     useEffect(() => {
-        const socketIo = io('http://localhost:3000');
+        const socketIo = io(process.env.NEXT_PUBLIC_BASE_URL || `http://localhost:3000`);
         setSocket(socketIo);
 
         return () => {
